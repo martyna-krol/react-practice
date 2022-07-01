@@ -11,8 +11,8 @@ const Column = props => {
         card => card.columnId === props.id && 
         card.title.toLowerCase().includes(searchString.toLowerCase())
         ));
-
     return (
+
         <article className={styles.column}>
             <h2 className={styles.title}><span className={styles.icon + ' fa fa-' + props.icon}></span>{props.title}</h2>
             <ul className={styles.cards}>
@@ -20,7 +20,10 @@ const Column = props => {
             </ul>
             <CardForm columnId={props.id} />
         </article>
+        
     )
 }
+
+
 
 export default Column;
