@@ -1,7 +1,3 @@
-const strContains = (a , b) => {
-    if (a.toLowerCase().includes(b.toLowerCase())) {
-        return true;
-    }
-}
+const strContains = (a, b) => a.toLowerCase().includes(b.toLowerCase());
 
 export default strContains;
