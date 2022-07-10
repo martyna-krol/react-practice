@@ -6,11 +6,10 @@ import { useDispatch } from 'react-redux';
 import { addList } from '../../redux/store';
 
 
-const ListForm = props => {
+const ListForm = ({ listId }) => {
     const dispatch = useDispatch();
     const [title, setTitle] = useState('');
     const [description, setDescription] = useState('');
-    const listId = props.listId;
     const handleSubmit = e => {
         e.preventDefault();
         dispatch(addList({ title, description, listId }));
