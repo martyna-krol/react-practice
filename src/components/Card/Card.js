@@ -20,7 +20,7 @@ const Card = props => {
             <div className='icons'>
                 <span 
                     onClick= {() => handleFavorite()} 
-                    className={clsx("fa", props.isFavorite === true && `${styles.active} + fa-star` , props.isFavorite === false && "fa-star-o")} /> 
+                    className={clsx("fa", props.isFavorite && `${styles.active} + fa-star` , !props.isFavorite && "fa-star-o")} /> 
                 <span 
                     onClick= {() => handleRemove()} 
                     className='fa fa-trash' /> 
