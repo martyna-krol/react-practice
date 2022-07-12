@@ -31,4 +31,4 @@ const cardsReducer = (statePart = [], action) => {
   }
 }
   
-  export default cardsReducer;
+export default cardsReducer;
